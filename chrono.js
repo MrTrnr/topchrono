@@ -56,17 +56,17 @@ let remainingDay = refDay - currentDay;
 
 
 
-if (remainingDay < 0 && currentMonth == 1){ /*mois à 28 jours février(index 1)*/
+if (remainingDay < 0 && currentMonth == 1){ /*mois à 28 jours février(index=1)*/
 	remainingDay=remainingDay+28; 
 	currentMonth=currentMonth+1;
 };
 
-if (remainingDay < 0 && (currentMonth == 8 || currentMonth == 10)){/*mois à 30 jours septembre(8), novembre(10)*/
+if (remainingDay < 0 && (currentMonth == 8 || currentMonth == 10)){/*mois à 30 jours septembre(index=8), novembre(index=10)*/
 	remainingDay=remainingDay+30;
 	currentMonth=currentMonth+1;
 };
 
-if (remainingDay < 0 && (currentMonth == 0 || currentMonth == 2 || currentMonth == 9 || currentMonth == 11)){/*mois à 31 jours janvier(0), mars(2), octobre(9), décembre(11)*/
+if (remainingDay < 0 && (currentMonth == 0 || currentMonth == 2 || currentMonth == 9 || currentMonth == 11)){/*mois à 31 jours janvier(index=0), mars(index=2), octobre(index=9), décembre(index=11)*/
 	remainingDay=remainingDay+31; 
 	currentMonth=currentMonth+1;
 };
