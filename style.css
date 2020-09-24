@@ -1,0 +1,174 @@
+html, body
+{
+	height:100%; 
+}
+
+body
+{
+	font-family: 'Ubuntu', sans-serif;
+	background-color:#222222;
+	margin:0;
+	display:flex;
+	flex-direction: column;
+}
+
+/*#header
+{
+	
+
+}*/
+
+#header_container
+{
+	
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:#ffffff;
+	height:54px;
+}
+
+.logo_simplon_gauche
+{
+	margin-left:20px;
+	width:40px;
+	height:40px;
+	/*background-color: blue;	*/
+}
+
+.logo_simplon_droite
+{
+	margin-right:20px;
+	width:40px;
+	height:40px;
+	/*background-color: blue;*/
+}
+
+#logo_simplon 
+{
+	width:40px;
+	height:40px;
+	text-align: left;
+}
+
+#main
+{
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.container
+{
+	display: flex;
+	align-items: center;
+}
+
+.circle
+{
+	margin:10px;
+	height:80px;
+	width:80px;
+	border-radius: 50%;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.month_circle
+{
+	background-color:#15ADE0;
+}
+
+.day_circle
+{
+	background-color:#EF476F;
+}
+
+.hour_circle
+{
+	background-color:#06D6A0;
+}
+
+.minute_circle
+{
+	background-color:#FFD166;
+}
+
+.second_circle
+{
+	background-color:#5F46C3;
+}
+
+.circle > p
+{
+	margin:0;
+	text-align: center;
+	font-size: 55px;
+}
+
+.text
+{
+	width: 150px;
+	height: 80px;
+	/*background-color: teal;*/
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text > p
+{
+	margin:0;
+	text-align: left;
+	font-size: 24px;
+}
+
+.month_text
+{
+	color:#15ADE0;
+}
+
+.day_text
+{
+	color:#EF476F;
+}
+
+.hour_text
+{
+	color:#06D6A0;
+}
+
+.minute_text
+{
+	color:#FFD166;
+}
+
+.second_text
+{
+	color:#5F46C3;
+}
+
+
+
+/*#footer
+{
+	
+	
+}*/
+
+#footer_container
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:54px;
+	background-color:#ffffff;
+}
+
+#logo_github
+{
+	width:40px;
+	height:40px;
+	margin-left: 20px;
+}
