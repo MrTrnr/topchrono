@@ -109,9 +109,9 @@ body
 
 .text
 {
-	width: 150px;
+	width: 100px;
 	height: 80px;
-	/*background-color: teal;*/
+	background-color: red;
 	display : flex;
 	flex-direction: column;
 	justify-content: center;
