@@ -95,4 +95,4 @@ document.getElementById("second").innerHTML = remainingSecond ;//+ " secondes re
 
 };
 
-setInterval(chrono,200);
+setInterval(chrono,100);
