@@ -60,8 +60,9 @@ body
 
 	.text
 	{
-		width: 100px;
-		height: 60px;
+		
+		/*width: 100px;*/
+		/*height: 60px;*/
 		flex-direction: column;
 	}
 
@@ -117,8 +118,8 @@ body
 
 	.text
 	{
-		width: 140px;
-		height: 90px;
+		/*width: 140px;*/
+		/*height: 90px;*/
 		flex-direction: column;
 	}
 
@@ -174,8 +175,8 @@ body
 
 	.text
 	{
-		width: 150px;
-		height: 100px;
+		/*width: 150px;*/
+		/*height: 100px;*/
 		flex-direction: column;
 	}
 
@@ -231,8 +232,8 @@ body
 
 	.text
 	{
-		width: 250px;
-		height: 100px;
+		/*width: 250px;*/
+		/*height: 100px;*/
 		flex-direction: column;
 	}
 
@@ -288,8 +289,8 @@ body
 
 	.text
 	{
-		width: 250px;
-		height: 100px;
+		/*width: 250px;*/
+		/*height: 100px;*/
 		flex-direction: column;
 	}
 
@@ -345,8 +346,8 @@ body
 
 	.text
 	{
-		width: 250px;
-		height: 100px;
+		/*width: 250px;*/
+		/*height: 100px;*/
 		flex-direction: column;
 	}
 
@@ -381,9 +382,14 @@ body
 		flex-direction: row;
 	}
 
-	.ghost_text
+	div.ghost_circle
 	{
-		display: none;
+		display:none;
+	}
+
+	.text
+	{
+		width:1px; /*pour permettre de centrer les éléments par rapport à l'axe vertical des cercle*/
 	}
 
 	.text > p
@@ -404,7 +410,7 @@ body
 		flex-direction: column;
 	}
 
-	.ghost_circle
+	div.ghost_text
 	{
 		display: none;
 	}
@@ -447,6 +453,7 @@ body
 	display : flex;
 	flex-direction: column;
 	justify-content: center;
+	/*background-color: green;*/
 }
 
 .month_circle
@@ -523,5 +530,17 @@ p
 	justify-content: center;
 	align-items: center;
 	background-color:#ffffff;
+}
+
+a:link
+{
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #888888;
+  text-decoration: none;
 }
 
