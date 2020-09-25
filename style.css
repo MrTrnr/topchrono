@@ -36,7 +36,7 @@ body
 	
 }
 
-@media screen and (max-width: 399px)
+@media screen and (max-width: 399px) /*affichage vertical pour smartphone dont largeur inférieur à 400 pixels*/
 {
 	#header_container
 	{
@@ -52,12 +52,12 @@ body
 		/*background-color: blue;	*/
 	}
 
-	.logo_simplon_droite
+	.logo_simplon_droite /*logo fantôme pour permettre le centrage du texte du header*/
 	{
-		margin-right:0px;
-		width:20px; /*largeur identique au logo à gauche, permet de centrer le titre du header*/
-		height:20px;
-		/*background-color: blue;*/
+		/*margin-right:20px;
+		width:40px; 
+		height:40px;*/
+		display: none; /*suppression du logo fantôme pour laisser la palce au texte*/
 	}
 
 	#logo_simplon 
@@ -104,7 +104,73 @@ body
 	}
 }
 
+@media screen and (min-width: 400) and (max-width: 479px)
+/*affichage vertical pour smartphone dont largeur égale ou supérieure à 400 pixels et inférieure à 480*/
+{
+	#header_container
+	{
+		font-size: 16px;
+		height:54px;
+	}
 
+	.logo_simplon_gauche
+	{
+		margin-left:20px;
+		width:40px;
+		height:40px;
+		/*background-color: blue;	*/
+	}
+
+	.logo_simplon_droite /*logo fantôme pour permettre le centrage du texte du header*/
+	{
+		margin-right:20px;
+		width:40px; 
+		height:40px;
+	}
+
+	#logo_simplon 
+	{
+		width:40px;
+		height:40px;
+	}
+
+	#main
+	{
+		flex-direction: column;
+	}
+
+	.circle
+	{
+		margin:5px;
+		height:70px;
+		width:70px;
+	}
+
+	.text
+	{
+		width: 100px;
+		height: 70px;
+		flex-direction: column;
+	}
+
+	.text > p
+	{
+		font-size: 24px;
+	}
+
+	#footer_container
+	{
+		height:54px;
+		font-size: 16px;
+	}
+
+	#logo_github
+	{
+		width:40px;
+		height:40px;
+		margin-left: 20px;
+	}
+}
 
 
 
