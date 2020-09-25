@@ -42,7 +42,7 @@ body
 		width:30px;
 		height:30px;
 		position:absolute;
-		left:20px;
+		left:10px;
 		top:5px;
 	}
 
@@ -228,11 +228,6 @@ body
 	align-items: center;
 	background-color:#ffffff;
 }
-
-/*#logo_simplon 
-{
-	text-align: left;
-}*/
 
 #main
 {
