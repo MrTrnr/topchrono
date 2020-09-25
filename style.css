@@ -18,53 +18,32 @@ body
 
 }*/
 
-/*petit smartphone 320 à 399 px de large*/
-/*smartphone 400 à 479 px de large */
-/*tablette 480 à 1024 px de large*/
-/*laptop  strictement supérieur 1024 px de large*/
+/*petit smartphone 320 à 413 px de large*/
+/*smartphone 414 à 479 px de large */
+/*petite tablette 480 à 767 px de large*/
+/*tablette 768 à 1023 px de large*/
+/*petit desktop  1024 à 1439 px de large*/
+/*desktop 1440 et plus de large*/
 
 
 
 
 
-@media screen and (max-width: 399px) /*affichage vertical pour smartphone dont largeur inférieur à 400 pixels*/
+@media screen and (max-width: 413px) /*affichage vertical pour smartphone dont largeur inférieur à 413 pixels*/
 {
 	#header_container
 	{
-		justify-content: flex-start; 
-	}
-
-	#header_container
-	{
 		font-size: 16px;
-		height:54px;
-	}
-
-	#header_text
-	{
-		margin-left:20px; /*évite de coller le texte au logo*/
-	}
-
-	.logo_simplon_gauche
-	{
-		margin-left:20px;
-		width:40px;
 		height:40px;
-		/*background-color: blue;	*/
-	}
-
-	.logo_simplon_droite /*logo fantôme pour permettre le centrage du texte du header*/
-	{
-		/*margin-right:20px;
-		width:40px; 
-		height:40px;*/
-		display: none; /*suppression du logo fantôme pour laisser la palce au texte*/
 	}
 
 	#logo_simplon 
 	{
-		width:40px;
-		height:40px;
+		width:30px;
+		height:30px;
+		position:absolute;
+		left:20px;
+		top:5px;
 	}
 
 	#main
@@ -75,8 +54,75 @@ body
 	.circle
 	{
 		margin:5px;
-		height:70px;
-		width:70px;
+		height:60px;
+		width:60px;
+	}
+
+	.circle > p
+	{
+		font-size: 40px;
+	}
+
+	.text
+	{
+		width: 100px;
+		height: 70px;
+		flex-direction: column;
+	}
+
+	.text > p
+	{
+		font-size: 20px;
+	}
+
+	#footer_container
+	{
+		height:40px;
+		font-size: 16px;
+	}
+
+	#logo_github
+	{
+		width:30px;
+		height:30px;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (min-width: 414px) and (max-width: 479px)
+/*affichage vertical pour smartphone dont largeur égale ou supérieure à 414 pixels et inférieure à 480*/
+{
+	#header_container
+	{
+		
+		font-size: 20px;
+		height:54px;
+	}
+
+	#logo_simplon 
+	{
+		width:40px;
+		height:40px;
+		position:absolute;
+		left:30px;
+		top:7px;
+	}
+
+	#main
+	{
+		flex-direction: column;
+	}
+
+	.circle
+	{
+		margin:5px;
+		height:90px;
+		width:90px;
+	}
+
+	.circle > p
+	{
+		font-size: 50px;
 	}
 
 	.text
@@ -94,7 +140,7 @@ body
 	#footer_container
 	{
 		height:54px;
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	#logo_github
@@ -105,18 +151,14 @@ body
 	}
 }
 
-@media screen and (min-width: 400px) and (max-width: 479px)
-/*affichage vertical pour smartphone dont largeur égale ou supérieure à 400 pixels et inférieure à 480*/
+@media screen and (min-width: 480px) and (max-width: 1024px)
+/*affichage vertical pour tablette largeur égale ou supérieure à 480 pixels et inférieure à 1024*/
 {
 	#header_container
 	{
-		justify-content: flex-start; 
-	}
-
-	#header_container
-	{
-		font-size: 16px;
-		height:54px;
+		
+		font-size: 36px;
+		height: 87px;
 	}
 
 	#header_text
@@ -124,26 +166,13 @@ body
 		margin-left:20px; /*évite de coller le texte au logo*/
 	}
 
-	.logo_simplon_gauche
-	{
-		margin-left:20px;
-		width:40px;
-		height:40px;
-		/*background-color: blue;	*/
-	}
-
-	.logo_simplon_droite /*logo fantôme pour permettre le centrage du texte du header*/
-	{
-		/*margin-right:20px;
-		width:40px; 
-		height:40px;*/
-		display: none; /*suppression du logo fantôme pour laisser la palce au texte*/
-	}
-
 	#logo_simplon 
 	{
 		width:40px;
 		height:40px;
+		position:absolute;
+		left:10px;
+		top:10px;
 	}
 
 	#main
@@ -154,8 +183,13 @@ body
 	.circle
 	{
 		margin:5px;
-		height:70px;
-		width:70px;
+		height:140px;
+		width:140px;
+	}
+
+	.circle > p
+	{
+		font-size: 80px;
 	}
 
 	.text
@@ -172,14 +206,14 @@ body
 
 	#footer_container
 	{
-		height:54px;
-		font-size: 16px;
+		height:87px;
+		font-size: 24px;
 	}
 
 	#logo_github
 	{
-		width:40px;
-		height:40px;
+		width:90px;
+		height:90px;
 		margin-left: 20px;
 	}
 }
@@ -190,14 +224,15 @@ body
 {
 	
 	display:flex;
+	justify-content: center; 
 	align-items: center;
 	background-color:#ffffff;
 }
 
-#logo_simplon 
+/*#logo_simplon 
 {
 	text-align: left;
-}
+}*/
 
 #main
 {
@@ -246,9 +281,7 @@ body
 
 .circle > p
 {
-	margin:0;
 	text-align: center;
-	font-size: 50px;
 }
 
 .text
@@ -259,7 +292,6 @@ body
 
 .text > p
 {
-	margin:0;
 	text-align: left;
 }
 
@@ -288,7 +320,10 @@ body
 	color:#5F46C3;
 }
 
-
+p
+{
+	margin:0;
+}
 
 
 
