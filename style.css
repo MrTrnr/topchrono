@@ -66,7 +66,7 @@ body
 	.text
 	{
 		width: 100px;
-		height: 70px;
+		height: 60px;
 		flex-direction: column;
 	}
 
@@ -104,7 +104,7 @@ body
 		width:40px;
 		height:40px;
 		position:absolute;
-		left:30px;
+		left:20px;
 		top:7px;
 	}
 
@@ -127,14 +127,14 @@ body
 
 	.text
 	{
-		width: 100px;
-		height: 70px;
+		width: 140px;
+		height: 90px;
 		flex-direction: column;
 	}
 
 	.text > p
 	{
-		font-size: 24px;
+		font-size: 22px;
 	}
 
 	#footer_container
@@ -151,28 +151,85 @@ body
 	}
 }
 
-@media screen and (min-width: 480px) and (max-width: 1024px)
+@media screen and (min-width: 480px) and (max-width: 767px)
+/*affichage vertical pour tablette largeur égale ou supérieure à 480 pixels et inférieure à 767*/
+{
+	#header_container
+	{
+		
+		font-size: 24px;
+		height:70px;
+	}
+
+	#logo_simplon 
+	{
+		width:44px;
+		height:44px;
+		position:absolute;
+		left:20px;
+		top:13px;
+	}
+
+	#main
+	{
+		flex-direction: column;
+	}
+
+	.circle
+	{
+		margin:5px;
+		height:120px;
+		width:120px;
+	}
+
+	.circle > p
+	{
+		font-size: 70px;
+	}
+
+	.text
+	{
+		width: 150px;
+		height: 100px;
+		flex-direction: column;
+	}
+
+	.text > p
+	{
+		font-size: 24px;
+	}
+
+	#footer_container
+	{
+		height:70px;
+		font-size: 24px;
+	}
+
+	#logo_github
+	{
+		width:60px;
+		height:60px;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
 /*affichage vertical pour tablette largeur égale ou supérieure à 480 pixels et inférieure à 1024*/
 {
 	#header_container
 	{
 		
 		font-size: 36px;
-		height: 87px;
-	}
-
-	#header_text
-	{
-		margin-left:20px; /*évite de coller le texte au logo*/
+		height:90px;
 	}
 
 	#logo_simplon 
 	{
-		width:40px;
-		height:40px;
+		width:84px;
+		height:84px;
 		position:absolute;
-		left:10px;
-		top:10px;
+		left:30px;
+		top:3px;
 	}
 
 	#main
@@ -194,8 +251,8 @@ body
 
 	.text
 	{
-		width: 100px;
-		height: 70px;
+		width: 250px;
+		height: 100px;
 		flex-direction: column;
 	}
 
@@ -206,8 +263,132 @@ body
 
 	#footer_container
 	{
-		height:87px;
+		height:90px;
 		font-size: 24px;
+	}
+
+	#logo_github
+	{
+		width:80px;
+		height:80px;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1439px)
+/*affichage vertical pour écran desktop largeur égale ou supérieure à 1025 pixels et inférieure à 1439*/
+{
+	#header_container
+	{
+		
+		font-size: 36px;
+		height:90px;
+	}
+
+	#logo_simplon 
+	{
+		width:84px;
+		height:84px;
+		position:absolute;
+		left:30px;
+		top:3px;
+	}
+
+	#main
+	{
+		flex-direction: column;
+	}
+
+	.circle
+	{
+		margin:5px;
+		height:140px;
+		width:140px;
+	}
+
+	.circle > p
+	{
+		font-size: 80px;
+	}
+
+	.text
+	{
+		width: 250px;
+		height: 100px;
+		flex-direction: column;
+	}
+
+	.text > p
+	{
+		font-size: 24px;
+	}
+
+	#footer_container
+	{
+		height:90px;
+		font-size: 24px;
+	}
+
+	#logo_github
+	{
+		width:80px;
+		height:80px;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (min-width: 1440px) 
+/*affichage vertical pour écran desktop égal ou supérieur à 1440 pixels */
+{
+	#header_container
+	{
+		
+		font-size: 36px;
+		height:100px;
+	}
+
+	#logo_simplon 
+	{
+		width:84px;
+		height:84px;
+		position:absolute;
+		left:50px;
+		top:8px;
+	}
+
+	#main
+	{
+		flex-direction: column;
+	}
+
+	.circle
+	{
+		margin:5px;
+		height:140px;
+		width:140px;
+	}
+
+	.circle > p
+	{
+		font-size: 80px;
+	}
+
+	.text
+	{
+		width: 250px;
+		height: 100px;
+		flex-direction: column;
+	}
+
+	.text > p
+	{
+		font-size: 24px;
+	}
+
+	#footer_container
+	{
+		height:100px;
+		font-size: 36px;
 	}
 
 	#logo_github
@@ -218,8 +399,6 @@ body
 	}
 }
 
-
-
 #header_container
 {
 	
@@ -227,6 +406,11 @@ body
 	justify-content: center; 
 	align-items: center;
 	background-color:#ffffff;
+}
+
+#header_text
+{
+	text-align:center;
 }
 
 #main
