@@ -17,9 +17,12 @@ body
 	
 
 }*/
-/*smartphone 320 à 479 px de large*/
+
+/*petit smartphone 320 à 399 px de large*/
+/*smartphone 400 à 479 px de large */
 /*tablette 480 à 1024 px de large*/
 /*laptop  strictement supérieur 1024 px de large*/
+
 
 
 #header_container
@@ -29,30 +32,84 @@ body
 	justify-content: space-between;
 	align-items: center;
 	background-color:#ffffff;
-	font-size: 16px;
-	height:54px;
+	
+	
 }
 
-.logo_simplon_gauche
+@media screen and (max-width: 399px)
 {
-	margin-left:20px;
-	width:40px;
-	height:40px;
-	/*background-color: blue;	*/
+	#header_container
+	{
+		font-size: 16px;
+		height:54px;
+	}
+
+	.logo_simplon_gauche
+	{
+		margin-left:20px;
+		width:40px;
+		height:40px;
+		/*background-color: blue;	*/
+	}
+
+	.logo_simplon_droite
+	{
+		margin-right:0px;
+		width:20px; /*largeur identique au logo à gauche, permet de centrer le titre du header*/
+		height:20px;
+		/*background-color: blue;*/
+	}
+
+	#logo_simplon 
+	{
+		width:40px;
+		height:40px;
+	}
+
+	#main
+	{
+		flex-direction: column;
+	}
+
+	.circle
+	{
+		margin:5px;
+		height:70px;
+		width:70px;
+	}
+
+	.text
+	{
+		width: 100px;
+		height: 70px;
+		flex-direction: column;
+	}
+
+	.text > p
+	{
+		font-size: 24px;
+	}
+
+	#footer_container
+	{
+		height:54px;
+		font-size: 16px;
+	}
+
+	#logo_github
+	{
+		width:40px;
+		height:40px;
+		margin-left: 20px;
+	}
 }
 
-.logo_simplon_droite
-{
-	margin-right:20px;
-	width:40px;
-	height:40px;
-	/*background-color: blue;*/
-}
+
+
+
 
 #logo_simplon 
 {
-	width:40px;
-	height:40px;
 	text-align: left;
 }
 
@@ -60,7 +117,6 @@ body
 {
 	margin:auto;
 	display: flex;
-	flex-direction: column;
 }
 
 .container
@@ -71,9 +127,6 @@ body
 
 .circle
 {
-	margin:5px;
-	height:70px;
-	width:70px;
 	border-radius: 50%;
 	display : flex;
 	flex-direction: column;
@@ -114,11 +167,7 @@ body
 
 .text
 {
-	width: 100px;
-	height: 70px;
-	/*background-color: red;*/
 	display : flex;
-	flex-direction: column;
 	justify-content: center;
 }
 
@@ -126,7 +175,6 @@ body
 {
 	margin:0;
 	text-align: left;
-	font-size: 24px;
 }
 
 .month_text
@@ -156,25 +204,13 @@ body
 
 
 
-/*#footer
-{
-	
-	
-}*/
+
 
 #footer_container
 {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	height:54px;
 	background-color:#ffffff;
-	font-size: 16px;
 }
 
-#logo_github
-{
-	width:40px;
-	height:40px;
-	margin-left: 20px;
-}
