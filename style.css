@@ -29,7 +29,7 @@ body
 
 
 
-@media screen and (max-width: 413px) /*affichage vertical pour smartphone dont largeur inférieur à 413 pixels*/
+@media screen and (max-width: 413px) /*affichage pour smartphone dont largeur inférieur à 413 pixels*/
 {
 	#header_container
 	{
@@ -44,11 +44,6 @@ body
 		position:absolute;
 		left:10px;
 		top:5px;
-	}
-
-	#main
-	{
-		flex-direction: column;
 	}
 
 	.circle
@@ -90,7 +85,7 @@ body
 }
 
 @media screen and (min-width: 414px) and (max-width: 479px)
-/*affichage vertical pour smartphone dont largeur égale ou supérieure à 414 pixels et inférieure à 480*/
+/*affichage pour smartphone dont largeur égale ou supérieure à 414 pixels et inférieure à 480*/
 {
 	#header_container
 	{
@@ -106,11 +101,6 @@ body
 		position:absolute;
 		left:20px;
 		top:7px;
-	}
-
-	#main
-	{
-		flex-direction: column;
 	}
 
 	.circle
@@ -152,7 +142,7 @@ body
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px)
-/*affichage vertical pour tablette largeur égale ou supérieure à 480 pixels et inférieure à 767*/
+/*affichage pour tablette largeur égale ou supérieure à 480 pixels et inférieure à 767*/
 {
 	#header_container
 	{
@@ -168,11 +158,6 @@ body
 		position:absolute;
 		left:20px;
 		top:13px;
-	}
-
-	#main
-	{
-		flex-direction: column;
 	}
 
 	.circle
@@ -214,7 +199,7 @@ body
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px)
-/*affichage vertical pour tablette largeur égale ou supérieure à 480 pixels et inférieure à 1024*/
+/*affichage pour tablette largeur égale ou supérieure à 480 pixels et inférieure à 1024*/
 {
 	#header_container
 	{
@@ -230,11 +215,6 @@ body
 		position:absolute;
 		left:30px;
 		top:3px;
-	}
-
-	#main
-	{
-		flex-direction: column;
 	}
 
 	.circle
@@ -276,7 +256,7 @@ body
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1439px)
-/*affichage vertical pour écran desktop largeur égale ou supérieure à 1025 pixels et inférieure à 1439*/
+/*affichage pour écran desktop largeur égale ou supérieure à 1025 pixels et inférieure à 1439*/
 {
 	#header_container
 	{
@@ -292,11 +272,6 @@ body
 		position:absolute;
 		left:40px;
 		top:8px;
-	}
-
-	#main
-	{
-		flex-direction: column;
 	}
 
 	.circle
@@ -338,7 +313,7 @@ body
 }
 
 @media screen and (min-width: 1440px) 
-/*affichage vertical pour écran desktop égal ou supérieur à 1440 pixels */
+/*affichage pour écran desktop égal ou supérieur à 1440 pixels */
 {
 	#header_container
 	{
@@ -354,11 +329,6 @@ body
 		position:absolute;
 		left:50px;
 		top:8px;
-	}
-
-	#main
-	{
-		flex-direction: column;
 	}
 
 	.circle
@@ -396,6 +366,42 @@ body
 		width:90px;
 		height:90px;
 		margin-left: 20px;
+	}
+}
+
+@media (orientation: portrait)
+{
+	#main
+	{
+		flex-direction: column;
+	}
+
+	.container
+	{
+		flex-direction: row;
+	}
+
+	.ghost_text
+	{
+		display: none;
+	}
+}
+
+@media (orientation: landscape)
+{
+	#main
+	{
+		flex-direction: row;
+	}
+
+	.container
+	{
+		flex-direction: column;
+	}
+
+	.ghost_circle
+	{
+		display: none;
 	}
 }
 
