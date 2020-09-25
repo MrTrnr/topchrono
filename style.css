@@ -110,13 +110,18 @@ body
 {
 	#header_container
 	{
-		justify-content: space-between; 
+		justify-content: flex-start; 
 	}
 
 	#header_container
 	{
 		font-size: 16px;
 		height:54px;
+	}
+
+	#header_text
+	{
+		margin-left:20px; /*évite de coller le texte au logo*/
 	}
 
 	.logo_simplon_gauche
@@ -129,9 +134,10 @@ body
 
 	.logo_simplon_droite /*logo fantôme pour permettre le centrage du texte du header*/
 	{
-		margin-right:20px;
+		/*margin-right:20px;
 		width:40px; 
-		height:40px;
+		height:40px;*/
+		display: none; /*suppression du logo fantôme pour laisser la palce au texte*/
 	}
 
 	#logo_simplon 
