@@ -36,9 +36,13 @@ body
 
 	#header_container
 	{
-		margin-left:20px; /*évite de coller le texte au logo*/
 		font-size: 16px;
 		height:54px;
+	}
+
+	#header_text
+	{
+		margin-left:20px; /*évite de coller le texte au logo*/
 	}
 
 	.logo_simplon_gauche
