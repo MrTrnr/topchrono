@@ -385,6 +385,11 @@ body
 	{
 		display: none;
 	}
+
+	.text > p
+	{
+		text-align: left;
+	}
 }
 
 @media (orientation: landscape)
@@ -402,6 +407,11 @@ body
 	.ghost_circle
 	{
 		display: none;
+	}
+
+	.text > p
+	{
+		text-align: center;
 	}
 }
 
@@ -473,11 +483,6 @@ body
 {
 	display : flex;
 	justify-content: center;
-}
-
-.text > p
-{
-	text-align: left;
 }
 
 .month_text
