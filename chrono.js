@@ -1,35 +1,17 @@
 	function chrono(){
 
-let refMonth = 2; /*en javascript janvier = 0, février = 1 donc mars = 2 */
-let refDay = 23;
-let refHour = 0;
+let refMonth = 9; /*en javascript janvier = 0, février = 1 donc mars = 2 */
+let refDay = 16;
+let refHour = 13;
 let refMinute = 0;
 let refSecond = 0;
 
- 
-
-
-
-
-
-
-// alert("execution boucle");
 let d = new Date();
 let currentMonth = d.getMonth(); 
 let currentDay = d.getDate();
 let currentHour = d.getHours();
 let currentMinute = d.getMinutes();
 let currentSecond = d.getSeconds();
-
-
-
-// document.getElementById("demo1").innerHTML = d.getFullYear();
-// document.getElementById("demo2").innerHTML = currentMonth + 1+"ème mois";
-// document.getElementById("demo3").innerHTML = currentDay + "ème jour";
-// document.getElementById("demo4").innerHTML = currentHour + " H";
-// document.getElementById("demo5").innerHTML = currentMinute + " M";
-// document.getElementById("demo6").innerHTML = currentSecond + " S";
-
 
 let remainingSecond = refSecond - currentSecond;
 
@@ -76,22 +58,11 @@ let remainingMonth = refMonth - currentMonth;
 
 if (remainingMonth < 0){remainingMonth=remainingMonth+12};
 
-
-
-
-
-
-
-
-
-// document.getElementById("demo").innerHTML += "<br/>";
 document.getElementById("month").innerHTML = remainingMonth ; //+ " mois restants"
 document.getElementById("day").innerHTML = remainingDay ;//+ " jours restants"
 document.getElementById("hour").innerHTML = remainingHour ;//+ " heures restantes"
 document.getElementById("minute").innerHTML = remainingMinute ;//+ " minutes restantes"
 document.getElementById("second").innerHTML = remainingSecond ;//+ " secondes restantes"
-
-
 
 };
 
