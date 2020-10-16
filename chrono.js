@@ -1,8 +1,8 @@
 	function chrono(){
 
-let refMonth = 2; /*en javascript janvier = 0, février = 1 donc mars = 2 */
-let refDay = 23;
-let refHour = 0;
+let refMonth = 9; /*en javascript janvier = 0, février = 1 donc mars = 2 */
+let refDay = 16;
+let refHour = 13;
 let refMinute = 0;
 let refSecond = 0;
 
